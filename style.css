@@ -33,7 +33,7 @@ header h1 {
     padding: 25px 25px;
     height: calc(100vh - 120px);
 
-    overflow-y: hidden;
+    overflow: hidden;
     background: #efefef;
 }
 
@@ -88,3 +88,29 @@ header h1 {
     font-size: 1.5rem;
 }
 
+.image-bar img {
+    height: 600px;
+    object-fit: cover;
+    border-radius: 25px;
+
+}
+
+.image-bar {
+    height: 600px;
+}
+
+.image-text, .info {
+    background: rgb(207, 207, 207);
+    padding: 55px;
+    border-radius: 25px;
+    margin: 10px 0;
+}
+
+.info {
+    grid-row: span 2;
+}
+
+.recipes-section {
+    padding: 10px 50px;
+    gap: 10px;
+}
