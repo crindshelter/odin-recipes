@@ -28,11 +28,13 @@ header h1 {
     grid-template-rows: 1fr 1fr;
     padding: 25px 25px;
     height: calc(100vh - 120px);
-    row-gap: 20px;
+
+    overflow-y: hidden;
     background: #efefef;
 }
 
-.main img {
+
+.main > img {
     border-radius: 25px;
 }
 
@@ -41,16 +43,44 @@ header h1 {
    flex-direction: column;
    align-self: start;
    justify-self: start;
+   grid-row: span 2;
 }
 
-.main .list h1 {
+.main .list > h1 {
     font-size: 5em;
 }
 
-.main .list ul a {
+.main .list .recipes-container h1 {
     font-size: 1.5rem;
+}
+
+.recipes-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.recipes-container .recipe-image, .recipes-container a {
+    border-radius: 25px;
+    box-sizing: 5px 5px 3px black;
+
+
+}
+
+.recipes-container img {
+    height: 220px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.recipe-image {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
 }
 
 .main .about {
     font-size: 1.5rem;
 }
+
